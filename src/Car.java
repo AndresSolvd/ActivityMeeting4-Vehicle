@@ -1,12 +1,13 @@
 public class Car extends Assembly implements Vehicle {
 
-    public Car(){
+    public Car() {
         numOfWheels = 4;
         passengerCapacity = 4;
         weight = 100;
         int randomVin = rand.nextInt(50);
         vin = Integer.toString(randomVin);
     }
+
     @Override
     public void drive() {
         System.out.println("Zoom Zoom!");
@@ -24,7 +25,7 @@ public class Car extends Assembly implements Vehicle {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return name;
     }
 }
